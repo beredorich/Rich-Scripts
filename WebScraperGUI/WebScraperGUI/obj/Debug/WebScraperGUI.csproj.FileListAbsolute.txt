@@ -1,0 +1,15 @@
+C:\Users\Rich\Documents\Rich\PowerShell\WebScraperGUI\WebScraperGUI\bin\Debug\WebScraperGUI.exe.config
+C:\Users\Rich\Documents\Rich\PowerShell\WebScraperGUI\WebScraperGUI\bin\Debug\WebScraperGUI.exe
+C:\Users\Rich\Documents\Rich\PowerShell\WebScraperGUI\WebScraperGUI\bin\Debug\WebScraperGUI.pdb
+C:\Users\Rich\Documents\Rich\PowerShell\WebScraperGUI\WebScraperGUI\obj\Debug\WebScraperGUI.csprojAssemblyReference.cache
+C:\Users\Rich\Documents\Rich\PowerShell\WebScraperGUI\WebScraperGUI\obj\Debug\MainWindow.g.cs
+C:\Users\Rich\Documents\Rich\PowerShell\WebScraperGUI\WebScraperGUI\obj\Debug\App.g.cs
+C:\Users\Rich\Documents\Rich\PowerShell\WebScraperGUI\WebScraperGUI\obj\Debug\WebScraperGUI_MarkupCompile.cache
+C:\Users\Rich\Documents\Rich\PowerShell\WebScraperGUI\WebScraperGUI\obj\Debug\WebScraperGUI_MarkupCompile.lref
+C:\Users\Rich\Documents\Rich\PowerShell\WebScraperGUI\WebScraperGUI\obj\Debug\MainWindow.baml
+C:\Users\Rich\Documents\Rich\PowerShell\WebScraperGUI\WebScraperGUI\obj\Debug\WebScraperGUI.g.resources
+C:\Users\Rich\Documents\Rich\PowerShell\WebScraperGUI\WebScraperGUI\obj\Debug\WebScraperGUI.Properties.Resources.resources
+C:\Users\Rich\Documents\Rich\PowerShell\WebScraperGUI\WebScraperGUI\obj\Debug\WebScraperGUI.csproj.GenerateResource.cache
+C:\Users\Rich\Documents\Rich\PowerShell\WebScraperGUI\WebScraperGUI\obj\Debug\WebScraperGUI.csproj.CoreCompileInputs.cache
+C:\Users\Rich\Documents\Rich\PowerShell\WebScraperGUI\WebScraperGUI\obj\Debug\WebScraperGUI.exe
+C:\Users\Rich\Documents\Rich\PowerShell\WebScraperGUI\WebScraperGUI\obj\Debug\WebScraperGUI.pdb
