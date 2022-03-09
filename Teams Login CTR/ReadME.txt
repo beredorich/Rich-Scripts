@@ -1,0 +1,1 @@
+This Script opens MS Teams on Personal PC only. 
