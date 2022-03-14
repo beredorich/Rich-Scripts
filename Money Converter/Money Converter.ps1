@@ -22,7 +22,6 @@ $parsedData = $rawData | Select-Object -Skip 30
 $currency = For ($i=0; $i -lt $parsedData.count; $i+=3){$parsedData[$i]}
 $rate = For ($i=1; $i -lt $parsedData.count; $i+=3){$parsedData[$i]}
 
-clear-host
 #XAML File
 $xamlLocation = "Z:\Powershell\Rich-Scripts\Money Converter\ConvertGUI\ConvertGUI\MainWindow.xaml"
 $xamlRaw = Get-Content -Path $xamlLocation -Raw
@@ -32,17 +31,32 @@ $xamlRaw = $xamlRaw -replace 'mc:Ignorable="d"', '' -replace "x:N", 'N' -replace
 [xml]$xamlFile = $xamlRaw
 
 #Read XAML
-$reader = New-Object System.Xml.XmlNodeReader $xamlFile
+$reader = (New-Object System.Xml.XmlNodeReader $xamlFile)
 
 #Load GUI
-$gui = [Windows.Markup.XamlReader]::Load($reader)
+$gui = [Windows.Markup.XamlReader]::Load( $reader )
 
+
+
+$wpf = @{ }
 $xamlFile.SelectNodes("//*[@Name]") | ForEach-Object {
-    Set-Variable -Name "var_$($_.Name)" -Value $window.FindName($_.Name) -ErrorAction Stop
+    $wpf.Add($_.Name, $gui.FindName($_.Name))
+   
 }
-Get-Variable var_*
-Write-Host "Cmon man"
-$Null = $gui.ShowDialog()
+$wpf.baseCurrencyList.Items.Add("US Dollar")
+foreach ($currency in $currency) {
+    $wpf.newCurrencyList.Items.Add($currency)
+}
+
+$wpf.execute.Add_Click({
+    $x = $wpf.newCurrencyList.SelectedItem
+    write-host $x
+})
+$wpf.Exit.Add_Click({$gui.Close()})
+
+
+
+$null = $gui.ShowDialog()
 
 
 
