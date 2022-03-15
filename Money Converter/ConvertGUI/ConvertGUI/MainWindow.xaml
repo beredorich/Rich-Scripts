@@ -1,0 +1,25 @@
+﻿<Window x:Name="Currency_Converter" x:Class="ConvertGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConvertGUI"
+        mc:Ignorable="d"
+        Title="Currency Converter" Height="450" Width="800">
+    <Grid Background="#FFB9E0EC">
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="683*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Currency 1" HorizontalAlignment="Left" Margin="46,29,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="newCurrencyList" Margin="267,65,334,111" Background="#FFECEDEE" BorderBrush="#FF09090A"/>
+        <Button x:Name="execute" Content="Convert" HorizontalAlignment="Left" Height="26" Margin="499,340,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button x:Name="Exit" Content="Exit" HorizontalAlignment="Left" Height="26" Margin="635,340,0,0" VerticalAlignment="Top" Width="110"/>
+        <ListBox x:Name="baseCurrencyList" Margin="46,65,549,111" Background="#FFECEDEE" BorderBrush="#FF09090A"/>
+        <Label Content="Curency 2" HorizontalAlignment="Left" Margin="267,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.089,2.341"/>
+        <Label Content="Enter Ammount" HorizontalAlignment="Left" Margin="499,65,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.089,2.341"/>
+        <TextBox x:Name="newAmmount" HorizontalAlignment="Left" Height="211" Margin="635,0,0,0" Text="New Currency" TextWrapping="Wrap" VerticalAlignment="Center" Width="110" BorderBrush="#FF09090A"/>
+        <TextBox x:Name="prevAmmount" HorizontalAlignment="Left" Height="211" Margin="499,0,0,0" Text="Current Currency" TextWrapping="Wrap" VerticalAlignment="Center" Width="110" BorderBrush="#FF09090A"/>
+
+    </Grid>
+</Window>
