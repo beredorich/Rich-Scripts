@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebScraperGUI", "WebScraperGUI\WebScraperGUI.csproj", "{ACC12071-A39C-4403-BE4F-E00608BC6292}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACC12071-A39C-4403-BE4F-E00608BC6292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACC12071-A39C-4403-BE4F-E00608BC6292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACC12071-A39C-4403-BE4F-E00608BC6292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACC12071-A39C-4403-BE4F-E00608BC6292}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4B53F19-E7DF-43C6-A75E-8195A90FECE2}
+	EndGlobalSection
+EndGlobal
