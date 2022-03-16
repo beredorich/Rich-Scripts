@@ -18,8 +18,9 @@
         <ListBox x:Name="baseCurrencyList" Margin="46,65,549,111" Background="#FFECEDEE" BorderBrush="#FF09090A"/>
         <Label Content="Curency 2" HorizontalAlignment="Left" Margin="267,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.089,2.341"/>
         <Label Content="Enter Ammount" HorizontalAlignment="Left" Margin="499,65,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.089,2.341"/>
-        <TextBox x:Name="newAmmount" HorizontalAlignment="Left" Height="211" Margin="635,0,0,0" Text="New Currency" TextWrapping="Wrap" VerticalAlignment="Center" Width="110" BorderBrush="#FF09090A"/>
+        <TextBox x:Name="newAmmount" HorizontalAlignment="Left" Height="211" Margin="635,0,0,0" Text="New Currency" TextWrapping="Wrap" VerticalAlignment="Center" Width="110" BorderBrush="#FF09090A" IsEnabled="False"/>
         <TextBox x:Name="prevAmmount" HorizontalAlignment="Left" Height="211" Margin="499,0,0,0" Text="Current Currency" TextWrapping="Wrap" VerticalAlignment="Center" Width="110" BorderBrush="#FF09090A"/>
+        <Label Content="New Amount&#xD;&#xA;" HorizontalAlignment="Left" Margin="635,65,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.089,2.341"/>
 
     </Grid>
 </Window>

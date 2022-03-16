@@ -6,6 +6,7 @@
 #Last Update 09MAR2022
 
 clear-host
+write-host "------NEW SESSION-------"
 Add-Type -AssemblyName presentationframework, presentationcore
 
 #Website
@@ -21,6 +22,7 @@ $parsedData = $rawData | Select-Object -Skip 30
 #Values
 $currency = For ($i=0; $i -lt $parsedData.count; $i+=3){$parsedData[$i]}
 $rate = For ($i=1; $i -lt $parsedData.count; $i+=3){$parsedData[$i]}
+
 
 #XAML File
 $xamlLocation = "Z:\Powershell\Rich-Scripts\Money Converter\ConvertGUI\ConvertGUI\MainWindow.xaml"
@@ -44,14 +46,25 @@ $xamlFile.SelectNodes("//*[@Name]") | ForEach-Object {
    
 }
 $wpf.baseCurrencyList.Items.Add("US Dollar")
+
 foreach ($currency in $currency) {
     $wpf.newCurrencyList.Items.Add($currency)
 }
 
+
 $wpf.execute.Add_Click({
-    $x = $wpf.newCurrencyList.SelectedItem
-    write-host $x
+    $arrayPlace = $wpf.newCurrencyList.SelectedIndex
+    $chosenRate = $rate[$arrayPlace]
+    $prevEntered = $wpf.prevAmmount.Text
+    
+    [Decimal]$prevEntered = $prevEntered
+    [Decimal]$calcAmmount = $calcAmmount
+    $calcAmmount = $prevEntered * $chosenRate
+    $wpf.newAmmount.Text = $calcAmmount
 })
+
+
+
 $wpf.Exit.Add_Click({$gui.Close()})
 
 
